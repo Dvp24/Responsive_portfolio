@@ -223,5 +223,12 @@ h4{
         width: auto;
         overflow: auto;
     }
+    img{
+        float: none;
+        width: 92%;
+        /* margin-right: 20px; */
+        height: auto;
+        align-box: center;
+    }
 
 }
