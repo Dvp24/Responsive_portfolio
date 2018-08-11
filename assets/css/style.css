@@ -42,7 +42,7 @@ h4, #mh{
     margin: 20px auto;
     clear: both;
     width: 960px;
-    height: 460px;
+   overflow: auto;
     background-color: #ffffff;
     border: solid #dddddd;
 }
@@ -116,8 +116,8 @@ input, .msg{
 }
 .submit{
     clear: both;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin: 20px;
+    /* margin-top: 20px; */
     width: 150px;
 } 
 h4{
@@ -179,14 +179,70 @@ h4{
     text-align: center;
     padding: 12px 0px;    
 }
-/* breakpoint: 1 */
+/* breakpoint 1 */
+/* for screen 960px */
+@media only screen and (max-width:980px){
+    .first{
+        margin-left: 50px;
+    }
+    .mcontent {
+        margin: 20px 330px 20px 50px;
+        width: auto;
+        /* overflow: auto; */
+    }
+    .contact {
+        margin: 14px 20px 14px 10px;
+    }
+    .about, .part, .port {
+        margin: 14px 10px;
+    }
+    img{
+        width: 230px;
+        height: 190px;
+    }
+    p{
+        margin: 10px 20px;
+    }
+    input, .msg{
+        width: 92%;
+        padding: 5px 2px;
+    }
+} 
+/* breakpoint 2 */
+/* for screen 768px */
+@media only screen and (max-width:768px){
+    .first{
+        margin-left: 20px;
+    }
+    .second{
+        margin-left: 400px;
+        height: 50px;
+    }
+    .mcontent{
+        width: auto;
+        margin: 20px;
+        overflow: auto;
+    }
+    .contact {
+        margin: 14px 10px 14px 5px;
+    }
+    .about, .part, .port {
+        margin: 14px 5px;
+    }
+    .img{
+        height: 200px;
+    }
+    input, .msg{
+        width: 92%;
+        padding: 5px 2px;
+    }
+}
+
+
+/* breakpoint: 3 */
 /* for mobile phones */
 @media only screen and (max-width:640px){
-    body{
-        background: #ffffff;
-    }
     .full {
-        background-color: #ffffff;
         border-bottom: none;
     }
     .first {
@@ -195,9 +251,9 @@ h4{
     width: 100%;
     height: 50px;
     margin-left: 0px;
-    /* why 640 is taking left margin 20???? */
     }
     .second{
+    background: #ffffff;
     height: 50px;
     float: right;
     width: 100%;
@@ -219,8 +275,9 @@ h4{
     }
     .mcontent{
         margin: 20px;
+        margin-bottom: 75px;
         width: auto;
-        overflow: auto;
+        /* overflow: auto; */
     }
     img{
         margin: 10px 20px;
@@ -252,59 +309,3 @@ h4{
         padding: 24px 0px;
     }
 }
-/* for screen 768px */
-/* @media only screen and (max-width:768px){
-    .first{
-        margin-left: 20px;
-    }
-    .second{
-        margin-left: 400px;
-        height: 50px;
-    }
-    .mcontent{
-        width: auto;
-        margin: 20px;
-        overflow: auto;
-    }
-    .contact {
-        margin: 14px 10px 14px 5px;
-    }
-    .about, .part, .port {
-        margin: 14px 5px;
-    }
-    .img{
-        height: 200px;
-    }
-    input, .msg{
-        width: 92%;
-        padding: 5px 2px;
-    }
-} */
-/* for screen 960px */
-/* @media only screen and (max-width:980px){
-    .first{
-        margin-left: 50px;
-    }
-    .mcontent {
-        margin: 20px 330px 20px 50px;
-        width: auto;
-        overflow: auto;
-    }
-    .contact {
-        margin: 14px 20px 14px 10px;
-    }
-    .about, .part, .port {
-        margin: 14px 10px;
-    }
-    img{
-        width: 230px;
-        height: 190px;
-    }
-    p{
-        margin: 10px 20px;
-    }
-    input, .msg{
-        width: 92%;
-        padding: 5px 2px;
-    }
-}  */
